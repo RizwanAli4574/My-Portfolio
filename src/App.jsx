@@ -1,13 +1,25 @@
+import Header from "./Components/Header";
+import Hero from "./Section/Hero";
+import About from "./Section/About";
+import Skills from "./Section/Skills";
+import Projects from "./Section/Projects";
+import Contact from "./Section/Contact";
+import Footer from "./Section/Footer";
 
-
-function App() {
-
-
+export default function App() {
   return (
     <>
-      <h1 className="text-3xl">Hello Word</h1>
-    </>
-  )
-}
+      <Header />
 
-export default App
+      <main className="pt-20">
+        <section id="home"><Hero /></section>
+        <section id="about"><About /></section>
+        <section id="skills"><Skills /></section>
+        <section id="projects"><Projects /></section>
+        <section id="contact"><Contact /></section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}

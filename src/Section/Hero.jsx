@@ -61,12 +61,12 @@ const Hero = () => {
   ]);
 
   return (
-    <section className="m-0 p-0 min-h-[calc(dvh-4rem)] bg-black bg-no-repeat">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pb-10 pt-12 md:grid-cols-2 lg:p-4">
+    <section className="pt-0 min-h-[calc(dvh-4rem)] bg-black bg-no-repeat">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pb-10 pt-10 md:grid-cols-2 lg:p-4">
         {/* LEFT SIDE TEXT */}
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
           <h1>
-            <span className="mb-2 block text-3xl font-bold text-white">
+            <span className="mb-0 block text-3xl font-bold text-white">
               Hi - I'm Rizwan Ali
             </span>
             <span className="block text-[1.75rem] font-bold text-indigo-500">
@@ -74,7 +74,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <h2 className="mt-3 text-xl text-white">
+          <h2 className="mt-0 text-xl text-white">
             Crafting innovative solutions to solve real-world problems
           </h2>
 

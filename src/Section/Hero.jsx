@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import heroPic from "../assets/HeroPic/Hero-Pic.png";
+import heroPic from "../assets/HeroPic/04.png";
 
 // =======================
 // Rotating Animation Hook
@@ -61,7 +61,7 @@ const Hero = () => {
   ]);
 
   return (
-    <section className="pt-0 min-h-[calc(dvh-4rem)] bg-black bg-no-repeat">
+    <section className=" min-h-[calc(dvh-4rem)] bg-black bg-no-repeat">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pb-10 pt-10 md:grid-cols-2 lg:p-4">
         {/* LEFT SIDE TEXT */}
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
@@ -69,7 +69,7 @@ const Hero = () => {
             <span className="mb-0 block text-3xl font-bold text-white">
               Hi - I'm Rizwan Ali
             </span>
-            <span className="block text-[1.75rem] font-bold text-indigo-500">
+            <span className="adjust block text-[1.75rem] font-bold text-indigo-500">
               {role}
             </span>
           </h1>
@@ -87,7 +87,9 @@ const Hero = () => {
             </a>
 
             <a
-              href="#www.linkedin.com/in/rizwan--ali"
+              href="https://www.linkedin.com/in/rizwan--ali"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer rounded-lg bg-[#1C2B3A] px-[14px] py-[10px] text-xl font-bold text-white"
             >
               LinkedIn Profile
@@ -101,7 +103,7 @@ const Hero = () => {
             <img
               src={heroPic}
               alt="Rizwan Ali"
-              className="absolute left-0 top-0 h-full w-full object-contain p-7"
+              className="absolute left-0 top-0 h-full w-full object-contain "
             />
 
             {/* SVG ELLIPSE ROTATING */}
@@ -118,9 +120,9 @@ const Hero = () => {
                 <circle
                   cx="206"
                   cy="206.401"
-                  r="220" 
-                  stroke="#6366F1" 
-                  strokeWidth="4" 
+                  r="204"
+                  stroke="#6366F1"
+                  strokeWidth="4"
                   strokeLinecap="round"
                   strokeDasharray="24 46 67 89"
                 />

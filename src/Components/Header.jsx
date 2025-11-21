@@ -7,7 +7,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed w-full bg-black shadow-md z-50">
+    <header className=" fixed w-full bg-black shadow-md z-50">
       <div className="max-w-8xl mx-auto flex justify-between items-center p-4">
         <a href="#home"><h1 className="text-2xl font-bold  flex items-center gap-2 text-white cursor-pointer hover:text-indigo-400">
           Rizwan Ali{" "}
@@ -17,7 +17,7 @@ export default function Header() {
         </h1>
         </a>
 
-  <nav className="hidden md:flex space-x-6 text-white">
+  <nav className="hidden md:flex space-x-5 text-white sticky adjust2">
 
   <a
     href="#home"

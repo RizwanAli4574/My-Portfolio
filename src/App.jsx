@@ -11,8 +11,8 @@ export default function App() {
     <>
       <Header />
 
-      <main className="pt-20">
-        <section id="home"><Hero /></section>
+      <main>
+        <section id="home" className="pt-15"><Hero /></section>
         <section id="about"><About /></section>
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>

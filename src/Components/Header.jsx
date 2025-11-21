@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className=" fixed w-full bg-black shadow-md z-50">
-      <div className="max-w-8xl mx-auto flex justify-between items-center p-4">
+      <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         <a href="#home"><h1 className="text-2xl font-bold  flex items-center gap-2 text-white cursor-pointer hover:text-indigo-400">
           Rizwan Ali{" "}
           <span className="text-2xl">

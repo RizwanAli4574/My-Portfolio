@@ -1,9 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import heroPic from "../assets/HeroPic/04.png";
 
-// =======================
-// Rotating Animation Hook
-// =======================
+
 function useRotatingAnimation(initialAngle = 0, rotationSpeed = 0.3) {
   const ellipseRef = useRef(null);
   const angleRef = useRef(initialAngle);
@@ -28,9 +26,7 @@ function useRotatingAnimation(initialAngle = 0, rotationSpeed = 0.3) {
   return ellipseRef;
 }
 
-// =======================
-// Role Switcher Hook
-// =======================
+
 function useRoleSwitcher(roles, interval = 1800) {
   const [role, setRole] = useState(roles[0]);
 
@@ -45,9 +41,7 @@ function useRoleSwitcher(roles, interval = 1800) {
   return role;
 }
 
-// =======================
-// HERO COMPONENT (React JS)
-// =======================
+
 const Hero = () => {
   const ellipseRef = useRotatingAnimation();
   const role = useRoleSwitcher([
@@ -61,15 +55,15 @@ const Hero = () => {
   ]);
 
   return (
-    <section className=" min-h-[calc(dvh-4rem)] bg-black bg-no-repeat">
+    <section className="min-h-[calc(dvh-4rem)] bg-black bg-no-repeat">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pb-10 pt-10 md:grid-cols-2 lg:p-4">
-        {/* LEFT SIDE TEXT */}
-        <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
+      
+        <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem] md:max-w-screen">
           <h1>
             <span className="mb-0 block text-3xl font-bold text-white">
               Hi - I'm Rizwan Ali
             </span>
-            <span className="adjust block text-[1.75rem] font-bold text-indigo-500">
+            <span className="w-fit block text-[1.75rem] font-bold text-indigo-500">
               {role}
             </span>
           </h1>
@@ -97,7 +91,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE IMAGE + ELLIPSE */}
+     
         <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
           <div className="relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
             <img
@@ -106,7 +100,7 @@ const Hero = () => {
               className="absolute left-0 top-0 h-full w-full object-contain "
             />
 
-            {/* SVG ELLIPSE ROTATING */}
+          
             <div
               ref={ellipseRef}
               className="absolute left-0 top-0 h-full w-full will-change-transform"

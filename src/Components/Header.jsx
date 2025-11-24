@@ -5,7 +5,7 @@ import { ImCross } from "react-icons/im";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-
+  
   return (
     <header className="fixed min-w-screen bg-black shadow-md z-50">
       <div className="lg:w-4xl md:w-3xl xl:w-7xl mx-auto flex justify-between items-center p-4 ">

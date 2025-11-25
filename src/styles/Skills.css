@@ -1,29 +1,66 @@
-.scroll-container {
+.scroll-container,
+.scroll-container-2 {
   overflow: hidden;
   width: 100%;
 }
 
+
 .scroll-items {
   display: flex;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll-3-left 30s linear infinite;
 }
+
+.scroll-items-2 {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: scroll-3_left 30s linear infinite reverse; 
+}
+
+
+.scroll-items-other {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: scroll-2-left 20s linear infinite;
+}
+
 
 .skill-img {
   width: 160px;
   height: 160px;
   margin: 0 20px;
+  object-fit: contain;
 }
 
-@keyframes scroll {
+
+
+
+@keyframes scroll-3-left {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.33%); 
+    transform: translateX(-33.333%);
   }
 }
 
+@keyframes scroll-3_left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
 
-
+@keyframes scroll-2-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

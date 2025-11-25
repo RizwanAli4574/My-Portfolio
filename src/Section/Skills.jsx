@@ -4,12 +4,17 @@ import jspic from "../assets/F-Skills/Js.png";
 import reactPic from "../assets/F-Skills/React.png";
 import tailwind from "../assets/F-Skills/Tail.png";
 import bootStrap from "../assets/F-Skills/Boot.png";
-import word from "../assets/F-Skills/Word.png";
-import excel from "../assets/F-Skills/Excel.png";
-import canva from "../assets/F-Skills/Canva.png";
+
+import word from "../assets/OSkills/Word.png";
+import excel from "../assets/OSkills/Excel.png";
+import canva from "../assets/OSkills/Canva.png";
+import PP from "../assets/OSkills/P-Point.png";
+
 import vscode from "../assets/T-skills/Vs-Code.png";
-// import vscode from "../assets/T-skills/Vs-Code.png";
-// import vscode from "../assets/T-skills/Vs-Code.png";
+import git from "../assets/T-skills/Git.png";
+import github from "../assets/T-skills/Github.png";
+import npm from "../assets/T-skills/Npm.png";
+import dev from "../assets/T-skills/DevTools.webp";
 import "../styles/Skills.css";
 
 function Skills() {
@@ -20,25 +25,25 @@ function Skills() {
 
 
   const tskills = [
-    vscode,
+    vscode, git, github, dev, npm
   ];
 
   const oskills = [
-    word, excel, canva
-  ];
+    word, excel, canva , PP
+  ]; 
 
   return (
     <section className="bg-black md:py-40 pt-20 pb-10">
 
       {/* Frontend Skills */}
       <h2 className="text-4xl font-bold text-center text-white mb-30">
-       Frontend Skills
+        Frontend Skills
       </h2>
 
       <div className="scroll-container">
         <div className="scroll-items">
 
-         
+
           {fskills.map((img, idx) => (
             <img
               key={idx}
@@ -48,7 +53,7 @@ function Skills() {
             />
           ))}
 
-         
+
           {fskills.map((img, idx) => (
             <img
               key={idx + fskills.length}
@@ -57,7 +62,7 @@ function Skills() {
               className="skill-img"
             />
           ))}
-         
+
           {fskills.map((img, idx) => (
             <img
               key={idx + fskills.length}
@@ -71,28 +76,45 @@ function Skills() {
       </div>
 
 
-     
-        {/* Tools Skills */}
+
+      {/* Tools Skills */}
       <h2 className="text-4xl font-bold text-center text-white mb-30 pt-15">
-       Tools Skills
+        Tools Skills
       </h2>
 
-      <div className="flex justify-center">
-  <div className="flex items-center">
-    {tskills.map((img, idx) => (
-      <img
-        key={idx}
-        src={img}
-        alt="Skill"
-        className="skill-img"
-      />
-    ))}
-  </div>
-</div>
+      <div className="flex justify-center scroll-container-2">
+        <div className="flex items-center scroll-items-2">
+          {tskills.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt="Skill"
+              className="skill-img"
+            />
+          ))}
+
+          {tskills.map((img, idx) => (
+            <img
+              key={idx + tskills.length}
+              src={img}
+              alt="Skill"
+              className="skill-img"
+            />
+          ))}
+           {tskills.map((img, idx) => (
+            <img
+              key={idx + tskills.length}
+              src={img}
+              alt="Skill"
+              className="skill-img"
+            />
+          ))}
+        </div>
+      </div>
 
 
-<h2 className="text-4xl font-bold text-center text-white mb-30 pt-15">
-       Other Skills
+      <h2 className="text-4xl font-bold text-center text-white mb-30 pt-15">
+        Other Skills
       </h2>
 
       <div className="scroll-container">
@@ -107,7 +129,7 @@ function Skills() {
             />
           ))}
 
-      
+
           {oskills.map((img, idx) => (
             <img
               key={idx + oskills.length}

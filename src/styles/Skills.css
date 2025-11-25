@@ -20,17 +20,9 @@
 }
 
 
-.scroll-items-other {
-  display: flex;
-  flex-wrap: nowrap;
-  width: max-content;
-  animation: scroll-2-left 20s linear infinite;
-}
-
-
 .skill-img {
-  width: 160px;
-  height: 160px;
+  width: 100px;    
+  height: 100px;
   margin: 0 20px;
   object-fit: contain;
 }
@@ -56,11 +48,4 @@
   }
 }
 
-@keyframes scroll-2-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+

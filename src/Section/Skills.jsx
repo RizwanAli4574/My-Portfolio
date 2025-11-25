@@ -19,48 +19,27 @@ import dev from "../assets/T-skills/DevTools.webp";
 import "../styles/Skills.css";
 
 function Skills() {
-  const fskills = [
-    htmlpic, csspic, jspic, reactPic, tailwind,
-    bootStrap,
-  ];
+  const fskills = [htmlpic, csspic, jspic, reactPic, tailwind, bootStrap];
 
+  const tskills = [vscode, git, github, dev, npm];
 
-  const tskills = [
-    vscode, git, github, dev, npm
-  ];
-
-  const oskills = [
-    word, excel, PP, canva, Ai
-  ];
+  const oskills = [word, excel, PP, canva, Ai];
 
   return (
     <section className="bg-black md:py-40 pt-20 pb-10">
-
       {/* Frontend Skills */}
-      <h2 className="text-4xl font-bold text-center text-white mb-30">
+      <h2 className="text-4xl font-bold text-center text-indigo-400 mb-30 animate-pulse">
         Frontend Skills
       </h2>
 
       <div className="scroll-container">
         <div className="scroll-items">
-
-
           {fskills.map((img, idx) => (
             <img
               key={idx}
               src={img}
               alt="Skill"
-              className="skill-img md:w-[160px] md:h-[160px]"
-            />
-          ))}
-
-
-          {fskills.map((img, idx) => (
-            <img
-              key={idx + fskills.length}
-              src={img}
-              alt="Skill"
-              className="skill-img md:w-[160px] md:h-[160px]"
+              className="skill-img"
             />
           ))}
 
@@ -69,28 +48,43 @@ function Skills() {
               key={idx + fskills.length}
               src={img}
               alt="Skill"
-              className="skill-img md:w-[160px] md:h-[160px]"
+              className="skill-img"
             />
           ))}
 
+          {fskills.map((img, idx) => (
+            <img
+              key={idx + fskills.length}
+              src={img}
+              alt="Skill"
+              className="skill-img"
+            />
+          ))}
         </div>
       </div>
 
-
-
       {/* Tools Skills */}
-      <h2 className="text-4xl font-bold text-center text-white mb-30 pt-15">
+      <h2 className="text-4xl font-bold text-center text-indigo-400 mb-30 pt-15 animate-pulse">
         Tools Skills
       </h2>
 
-      <div className="flex justify-center scroll-container-2">
-        <div className="flex items-center scroll-items-2">
+      <div className=" scroll-container-2">
+        <div className=" scroll-items">
           {tskills.map((img, idx) => (
             <img
               key={idx}
               src={img}
               alt="Skill"
-              className="skill-img md:w-[160px] md:h-[160px]"
+              className="skill-img"
+            />
+          ))}
+
+           {tskills.map((img, idx) => (
+            <img
+              key={idx + tskills.length}
+              src={img}
+              alt="Skill"
+              className="skill-img"
             />
           ))}
 
@@ -99,22 +93,14 @@ function Skills() {
               key={idx + tskills.length}
               src={img}
               alt="Skill"
-              className="skill-img md:w-[160px] md:h-[160px]"
-            />
-          ))}
-          {tskills.map((img, idx) => (
-            <img
-              key={idx + tskills.length}
-              src={img}
-              alt="Skill"
-              className="skill-img md:w-[160px] md:h-[160px]"
+              className="skill-img"
             />
           ))}
         </div>
       </div>
 
       {/* Other Skills */}
-      <h2 className="text-4xl font-bold text-center text-white mb-30 pt-15">
+      <h2 className="text-4xl font-bold text-center text-indigo-400 mb-30 pt-15 animate-pulse">
         Other Skills
       </h2>
 
@@ -126,7 +112,7 @@ function Skills() {
               key={idx}
               src={img}
               alt="Skill"
-              className="skill-img md:w-[190px] md:h-[190px]"
+              className="skill-img"
             />
           ))}
 
@@ -136,7 +122,7 @@ function Skills() {
               key={idx + oskills.length}
               src={img}
               alt="Skill"
-              className="skill-img md:w-[190px] md:h-[190px]"
+              className="skill-img "
             />
           ))}
 
@@ -145,19 +131,14 @@ function Skills() {
               key={idx + oskills.length}
               src={img}
               alt="Skill"
-              className="skill-img md:w-[190px] md:h-[190px]"
+              className="skill-img"
             />
           ))}
 
         </div>
       </div>
-
     </section>
   );
 }
 
 export default Skills;
-
-
-
-

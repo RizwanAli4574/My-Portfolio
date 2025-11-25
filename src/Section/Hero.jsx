@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import heroPic from "../assets/HeroPic/04.png";
+import { FaLinkedin } from "react-icons/fa6";
 
 
 function useRotatingAnimation(initialAngle = 0, rotationSpeed = 0.3) {
@@ -57,13 +58,12 @@ const Hero = () => {
   return (
     <section className="min-h-[calc(dvh-4rem)] bg-black bg-no-repea md:pt-5 md:px-20">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pb-10 pt-10 md:grid-cols-2 lg:p-4">
-      
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem] md:max-w-screen">
           <h1>
             <span className="mb-0 block text-3xl font-bold text-white">
               Hi - I'm Rizwan Ali
             </span>
-            <span className="w-fit block text-[1.75rem] font-bold text-indigo-500">
+            <span className="w-fit block lg:text-[1.75rem] text-2xl font-bold text-indigo-500 lg:pt-5">
               {role}
             </span>
           </h1>
@@ -84,6 +84,15 @@ const Hero = () => {
               href="https://www.linkedin.com/in/rizwan--ali"
               target="_blank"
               rel="noopener noreferrer"
+              className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-xl font-bold text-white"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/rizwan--ali"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer rounded-lg bg-[#1C2B3A] px-[14px] py-[10px] text-xl font-bold text-white"
             >
               LinkedIn Profile
@@ -92,8 +101,8 @@ const Hero = () => {
         </div>
 
      
-        <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
-          <div className="relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
+        <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem] pt-10 sm:pt-0">
+          <div className="relative w-[18rem] h-[18rem] sm:w-[22rem] sm:h-[22rem] md:w-[20rem] md:h-[20rem] lg:w-[25.75rem] lg:h-[25.75rem] ">
             <img
               src={heroPic}
               alt="Rizwan Ali"

@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="fixed min-w-screen bg-black shadow-md z-50">
       <div className="lg:w-4xl md:w-3xl xl:w-7xl mx-auto flex justify-between items-center p-4 ">
-        <a href="#home"><h1 className="text-2xl font-bold  flex items-center gap-2 text-white cursor-pointer hover:text-indigo-400">
+        <a href="#home"><h1 className="text-2xl font-bold  flex items-center gap-2 text-white cursor-pointer hover:text-indigo-400 md:pl-10">
           Rizwan Ali{" "}
           <span className="text-2xl">
             <BsCodeSlash />
@@ -17,7 +17,7 @@ export default function Header() {
         </h1>
         </a>
 
-  <nav className="hidden md:flex space-x-5  text-white sticky">
+  <nav className="hidden md:flex space-x-5  text-white sticky md:pr-10 ">
 
   <a
     href="#home"
@@ -89,19 +89,19 @@ export default function Header() {
 
       {open && (
         <nav className="md:hidden bg-black shadow-md flex flex-col items-center space-y-4 py-4 text-white ">
-          <a href="#home" className="hover:text-indigo-400" onClick={() => setOpen(false)}>
+          <a href="#home"  onClick={() => setOpen(false)}>
             Home
           </a>
-          <a href="#about" className="hover:text-indigo-400" onClick={() => setOpen(false)}>
+          <a href="#about"  onClick={() => setOpen(false)}>
             About
           </a>
-          <a href="#skills" className="hover:text-indigo-400" onClick={() => setOpen(false)}>
+          <a href="#skills"  onClick={() => setOpen(false)}>
             Skills
           </a>
-          <a href="#projects" className="hover:text-indigo-400" onClick={() => setOpen(false)}>
+          <a href="#projects"  onClick={() => setOpen(false)}>
             Projects
           </a>
-          <a href="#contact" className="hover:text-indigo-400" onClick={() => setOpen(false)}>
+          <a href="#contact"  onClick={() => setOpen(false)}>
             Contact
           </a>
         </nav>

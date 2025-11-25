@@ -55,7 +55,7 @@ const Hero = () => {
   ]);
 
   return (
-    <section className="min-h-[calc(dvh-4rem)] bg-black bg-no-repea">
+    <section className="min-h-[calc(dvh-4rem)] bg-black bg-no-repea md:pt-5 md:px-20">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pb-10 pt-10 md:grid-cols-2 lg:p-4">
       
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem] md:max-w-screen">

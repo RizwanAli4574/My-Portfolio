@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import heroPic from "../assets/HeroPic/04.png";
 import { FaLinkedin } from "react-icons/fa6";
+import { IoLogoGithub } from "react-icons/io5";
 
 
 function useRotatingAnimation(initialAngle = 0, rotationSpeed = 0.3) {
@@ -56,7 +57,7 @@ const Hero = () => {
   ]);
 
   return (
-    <section className="min-h-[calc(dvh-4rem)] bg-black bg-no-repea md:pt-5 md:px-20">
+    <section className="min-h-[calc(dvh-4rem)]  bg-no-repea md:pt-5 md:px-20">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pb-10 pt-10 md:grid-cols-2 lg:p-4">
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem] md:max-w-screen">
           <h1>
@@ -72,10 +73,10 @@ const Hero = () => {
             Crafting innovative solutions to solve real-world problems
           </h2>
 
-          <div className="mt-6 flex flex-wrap gap-6">
+          <div className="mt-6 flex flex-wrap gap-3 animate-pulse">
             <a
               href="#contact"
-              className="min-w-32 cursor-pointer rounded-lg bg-indigo-500 px-[14px] py-[10px] text-center text-xl font-bold text-[#00071E] "
+              className="min-w-25 cursor-pointer rounded-lg bg-indigo-500 px-[14px] py-[10px] text-center text-2xl font-bold text-white "
             >
               Hire Me
             </a>
@@ -84,18 +85,18 @@ const Hero = () => {
               href="https://www.linkedin.com/in/rizwan--ali"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-xl font-bold text-white"
+              className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-2xl  text-blue-700 hover:bg-indigo-50"
             >
-              <FaLinkedin />
+             <span className="text-4xl"> <FaLinkedin /> </span>
             </a>
 
             <a
-              href="https://www.linkedin.com/in/rizwan--ali"
+              href="https://github.com/RizwanAli4574"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer rounded-lg bg-[#1C2B3A] px-[14px] py-[10px] text-xl font-bold text-white"
+              className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-2xl text-white hover:bg-indigo-50 hover:text-black"
             >
-              LinkedIn Profile
+             <span className="text-4xl"><IoLogoGithub /> </span>
             </a>
           </div>
         </div>

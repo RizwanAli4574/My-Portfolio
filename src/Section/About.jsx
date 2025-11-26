@@ -5,7 +5,7 @@ function About() {
 
   <section
   id="about"
-  className="flex items-center bg-black px-6 
+  className="flex items-center  px-6 
              pt-20 md:pt-35 lg:pt-45 pb-20 md:pb-26 md:px-22"
 >
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">

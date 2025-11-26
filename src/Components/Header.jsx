@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="fixed min-w-screen bg-black shadow-md z-50">
       <div className="lg:w-4xl md:w-3xl xl:w-7xl mx-auto flex justify-between items-center p-4 ">
-        <a href="#home"><h1 className="text-2xl font-bold  flex items-center gap-2 text-white cursor-pointer hover:text-indigo-400 md:pl-10">
+        <a href="#home"><h1 className="text-2xl font-bold  flex items-center gap-2 text-white cursor-pointer hover:text-indigo-400 md:pl-10 ">
           Rizwan Ali{" "}
           <span className="text-2xl">
             <BsCodeSlash />
@@ -69,7 +69,7 @@ export default function Header() {
     after:content-[''] after:absolute after:left-0 after:-bottom-1
     after:w-0 after:h-[2px] after:bg-indigo-600
     after:transition-all after:duration-300
-    hover:after:w-full"
+    hover:after:w-full animate-bounce"
   >
     Contact
   </a>

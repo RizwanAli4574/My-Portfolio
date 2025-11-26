@@ -26,7 +26,7 @@ function Skills() {
   const oskills = [word, excel, PP, canva, Ai];
 
   return (
-    <section className="bg-black md:py-40 pt-20 pb-10">
+    <section className=" md:py-40 pt-20 pb-10">
       {/* Frontend Skills */}
       <h2 className="text-4xl font-bold text-center text-indigo-400 mb-30 animate-pulse">
         Frontend Skills
@@ -65,7 +65,7 @@ function Skills() {
 
       {/* Tools Skills */}
       <h2 className="text-4xl font-bold text-center text-indigo-400 mb-30 pt-15 animate-pulse">
-        Tools Skills
+        Tool Skills
       </h2>
 
       <div className=" scroll-container-2">

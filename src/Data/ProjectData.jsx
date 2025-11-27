@@ -25,7 +25,7 @@ export const ProjectData = [
     id: 3,
     title: "Movie Explorer",
     image: Movie,
-    live: "https:movieexplorer-by-reactjs.netlify.app",
+    live: "https://movieexplorer-by-reactjs.netlify.app",
     github:
       "https://github.com/RizwanAli4574/ReactPracticeFromHome/tree/main/React%20Projects/MovieExplorer",
   },

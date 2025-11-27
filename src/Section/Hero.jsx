@@ -3,7 +3,6 @@ import heroPic from "../assets/HeroPic/04.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io5";
 
-
 function useRotatingAnimation(initialAngle = 0, rotationSpeed = 0.3) {
   const ellipseRef = useRef(null);
   const angleRef = useRef(initialAngle);
@@ -28,33 +27,31 @@ function useRotatingAnimation(initialAngle = 0, rotationSpeed = 0.3) {
   return ellipseRef;
 }
 
+// function useRoleSwitcher(roles, interval = 1800) {
+//   const [role, setRole] = useState(roles[0]);
 
-function useRoleSwitcher(roles, interval = 1800) {
-  const [role, setRole] = useState(roles[0]);
+//   useEffect(() => {
+//     const id = setInterval(() => {
+//       setRole((prev) => roles[(roles.indexOf(prev) + 1) % roles.length]);
+//     }, interval);
 
-  useEffect(() => {
-    const id = setInterval(() => {
-      setRole((prev) => roles[(roles.indexOf(prev) + 1) % roles.length]);
-    }, interval);
+//     return () => clearInterval(id);
+//   }, [roles, interval]);
 
-    return () => clearInterval(id);
-  }, [roles, interval]);
-
-  return role;
-}
-
+//   return role;
+// }
 
 const Hero = () => {
   const ellipseRef = useRotatingAnimation();
-  const role = useRoleSwitcher([
-    "FRONTEND DEVELOPER",
-    "HTML",
-    "CSS",
-    "JAVASCRIPT",
-    "REACT JS",
-    "BOOTSTRAP",
-    "TAILWIND",
-  ]);
+  // const role = useRoleSwitcher([
+  //   "FRONTEND DEVELOPER",
+  //   "HTML",
+  //   "CSS",
+  //   "JAVASCRIPT",
+  //   "REACT JS",
+  //   "BOOTSTRAP",
+  //   "TAILWIND",
+  // ]);
 
   return (
     <section className="min-h-[calc(dvh-4rem)]  bg-no-repea md:pt-5 md:px-20">
@@ -64,9 +61,12 @@ const Hero = () => {
             <span className="mb-0 block text-3xl font-bold text-white">
               Hi - I'm Rizwan Ali
             </span>
-            <span className="w-fit block lg:text-[1.75rem] text-2xl font-bold text-indigo-500 lg:pt-5">
-              {role}
+            <span className="w-fit block lg:text-[1.75rem] text-2xl font-bold text-indigo-500 lg:pt-5 animate-pulse">
+               FRONTEND DEVELOPER
             </span>
+            {/* <span className="block lg:text-[1.75rem] text-2xl font-bold text-indigo-500 lg:pt-4 w-[350px]  transition-all duration-500 ">
+              {role}
+            </span> */}
           </h1>
 
           <h2 className="mt-0 text-xl text-white">
@@ -87,7 +87,10 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-2xl  text-blue-700 bg-indigo-50 animate-pulse hover:animate-none"
             >
-             <span className="text-4xl"> <FaLinkedin /> </span>
+              <span className="text-4xl">
+                {" "}
+                <FaLinkedin />{" "}
+              </span>
             </a>
 
             <a
@@ -96,12 +99,13 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-2xl text-black bg-indigo-50 animate-pulse hover:animate-none"
             >
-             <span className="text-4xl"><IoLogoGithub /> </span>
+              <span className="text-4xl">
+                <IoLogoGithub />{" "}
+              </span>
             </a>
           </div>
         </div>
 
-     
         <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem] pt-10 sm:pt-0">
           <div className="relative w-[18rem] h-[18rem] sm:w-[22rem] sm:h-[22rem] md:w-[20rem] md:h-[20rem] lg:w-[25.75rem] lg:h-[25.75rem] ">
             <img
@@ -110,7 +114,6 @@ const Hero = () => {
               className="absolute left-0 top-0 h-full w-full object-contain "
             />
 
-          
             <div
               ref={ellipseRef}
               className="absolute left-0 top-0 h-full w-full will-change-transform"

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, } from "react";
 import heroPic from "../assets/HeroPic/04.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io5";

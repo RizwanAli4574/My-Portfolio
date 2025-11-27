@@ -28,7 +28,7 @@ function Skills() {
   return (
     <section className=" md:py-40 pt-20 pb-10">
       {/* Frontend Skills */}
-      <h2 className="text-4xl font-bold text-center text-indigo-400 mb-30 animate-pulse">
+      <h2 className="text-4xl font-bold text-center text-white mb-20 ">
         Frontend Skills
       </h2>
 
@@ -64,12 +64,12 @@ function Skills() {
       </div>
 
       {/* Tools Skills */}
-      <h2 className="text-4xl font-bold text-center text-indigo-400 mb-30 pt-15 animate-pulse">
+      <h2 className="text-4xl font-bold text-center text-white mb-20 pt-15 ">
         Tool Skills
       </h2>
 
       <div className=" scroll-container-2">
-        <div className=" scroll-items">
+        <div className=" scroll-items-2">
           {tskills.map((img, idx) => (
             <img
               key={idx}
@@ -100,7 +100,7 @@ function Skills() {
       </div>
 
       {/* Other Skills */}
-      <h2 className="text-4xl font-bold text-center text-indigo-400 mb-30 pt-15 animate-pulse">
+      <h2 className="text-4xl font-bold text-center text-white mb-20 pt-15 ">
         Other Skills
       </h2>
 

@@ -4,10 +4,10 @@ import { IoMdCode } from "react-icons/io";
 
 export default function Projects() {
   return (
-    <div className="px-4 py-10 max-w-[1200px] mx-auto">
-      <h2 className="text-4xl font-bold text-center text-white mb-10">Projects</h2>
+    <div className="px-4 py-10 max-w-[1200px] mx-auto pt-20">
+      <h2 className="text-4xl font-bold text-center text-white mb-10">Some Projects</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-pointer">
 
         {ProjectData.map((item) => (
           <div key={item.id} className="bg-gray-900 rounded-xl p-5 shadow-lg hover:scale-105 duration-300">
@@ -25,10 +25,10 @@ export default function Projects() {
             <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
 
           
-            <p className="text-gray-300 mb-4">{item.desc}</p>
+        
 
           
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between pt-5">
               <a 
                 className="bg-gray-600 text-white font-bold px-4 py-2 rounded-lg hover:bg-gray-700 duration-300 flex items-center gap-2"
                 href={item.live} target="_blank">

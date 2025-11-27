@@ -73,10 +73,10 @@ const Hero = () => {
             Crafting innovative solutions to solve real-world problems
           </h2>
 
-          <div className="mt-6 flex flex-wrap gap-3 animate-pulse">
+          <div className="mt-6 flex flex-wrap gap-3 ">
             <a
               href="#contact"
-              className="min-w-25 cursor-pointer rounded-lg bg-indigo-500 px-[14px] py-[10px] text-center text-2xl font-bold text-white "
+              className="min-w-25 cursor-pointer rounded-lg bg-indigo-500 px-[14px] py-[10px] text-center text-2xl font-bold text-white animate-pulse hover:animate-none"
             >
               Hire Me
             </a>
@@ -85,7 +85,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/rizwan--ali"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-2xl  text-blue-700 hover:bg-indigo-50"
+              className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-2xl  text-blue-700 bg-indigo-50 animate-pulse hover:animate-none"
             >
              <span className="text-4xl"> <FaLinkedin /> </span>
             </a>
@@ -94,7 +94,7 @@ const Hero = () => {
               href="https://github.com/RizwanAli4574"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-2xl text-white hover:bg-indigo-50 hover:text-black"
+              className="cursor-pointer rounded-lg  px-[14px] py-[10px] text-2xl text-black bg-indigo-50 animate-pulse hover:animate-none"
             >
              <span className="text-4xl"><IoLogoGithub /> </span>
             </a>

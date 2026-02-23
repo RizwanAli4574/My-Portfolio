@@ -4,7 +4,7 @@ import Movie from "../assets/Dataimg/MovieExplorer.JPG";
 import Pass from "../assets/Dataimg/Password.JPG";
 import curr from "../assets/Dataimg/Currency.JPG";
 import quiz from "../assets/Dataimg/Quiz.JPG";
-import crud from "../assets/Dataimg/CRUD.JPG";
+import crud from "../assets/Dataimg/Crud.JPG";
 import expense from "../assets/Dataimg/Expense.JPG";
 import reactQuiz from "../assets/Dataimg/React Quiz.JPG";
 

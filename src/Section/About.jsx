@@ -11,14 +11,17 @@ function About() {
         <div>
           <h2 className="text-4xl font-bold mb-5 text-white">About Me</h2>
           <p className="text-white leading-relaxed">
-            I'm a passionate Frontend Developer with 1.5 years of experience,
-            skilled in HTML, CSS, JavaScript, Tailwind, Bootstrap, and React. I
-            focus on building clean, modern, and responsive user interfaces with
-            smooth interactions. I enjoy turning ideas into functional web
-            experiences and continuously improving my skills to stay aligned
-            with modern frontend standards. I pay strong attention to detail and
-            quality in every project. My goal is to build fast, user-friendly
-            applications that look great and deliver real value to users.
+            I’m a passionate React Frontend Developer with over 2 years of
+            hands-on experience building responsive, scalable, and user-focused
+            web applications. I specialize in JavaScript (ES6+), React.js, and
+            modern UI libraries, with practical experience in state management,
+            API integration, form validation, and component-based architecture.
+            I enjoy transforming complex ideas into clean, interactive, and
+            high-performance user interfaces. My approach focuses on writing
+            reusable, maintainable code while ensuring smooth user experience
+            across devices. Currently, I am expanding my expertise in backend
+            technologies to grow into a Full Stack Developer and build complete
+            end-to-end solutions.
           </p>
         </div>
 

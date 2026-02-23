@@ -34,7 +34,7 @@ function Footer() {
               <IoLogoGithub />
             </a>
             <a
-              href="https://wa.me/923184300963?text=Hello%20Rizwan%20Ali"
+              href="https://wa.me/923164851126?text=Hello%20Rizwan%20Ali"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-green-500 duration-300 flex items-center"

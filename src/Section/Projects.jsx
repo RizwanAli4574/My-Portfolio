@@ -32,13 +32,13 @@ export default function Projects() {
               <a 
                 className="bg-gray-600 text-white font-bold px-4 py-2 rounded-lg hover:bg-gray-700 duration-300 flex items-center gap-2"
                 href={item.live} target="_blank">
-                Live View <CiLocationArrow1 />
+                Live Demo <CiLocationArrow1 />
               </a>
 
               <a 
                 className="bg-gray-600 text-white font-bold  px-4 py-2 rounded-lg hover:bg-gray-700 duration-300 flex items-center gap-2"
                 href={item.github} target="_blank">
-                Source Code <IoMdCode />
+                View Code <IoMdCode />
               </a>
             </div>
 
